@@ -1,0 +1,32 @@
+.single-product {
+  #main {
+    .entry.product {
+      .woocommerce-product-gallery {
+        max-width: none;
+        width: 100%;
+      }
+      .entry-summary {
+        width: 100%;
+      }
+      .product_title.entry-title {
+        font-weight: 700;
+      }
+
+    }
+  }
+  @media screen and (min-width: 768px) { 
+    #main {
+      .entry.product {
+        .woocommerce-product-gallery {
+          max-width: 720px;
+          width: 58%;
+        }
+        .entry-summary {
+          width: 38%;
+        }
+  
+      }
+    }
+  }
+
+}

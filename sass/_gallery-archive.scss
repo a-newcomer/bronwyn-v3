@@ -1,0 +1,102 @@
+.gallery-archive-header {
+
+}
+.gallery-archive-container {
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  article {
+    width: 23%;
+    .gallery-archive-content {
+      background-color: white;
+      padding: 10px;
+
+      .gallery-feat-image {
+        padding-top: 130%;
+        width: 100%;
+        //border: 5px solid black;
+        //border-radius: 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .entry-title {
+        font-size: 35px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+    }
+  }
+  .navigation.pagination {
+    width: 100%;
+  }
+}
+//change these names and values per container classes and update in masonry in functions.php
+// .wp-block-gallery, .gallery-content {
+//   margin: 0 auto;
+//   width: 100%;
+//   max-width: 1360px;
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+// .blocks-gallery-grid, .gallery-item {
+//   //overflow: hidden;
+//   //Be sure to change width in masonry-init.js if you change this
+//   width: 25%;
+//   //border: 1px solid #ddd;
+//   padding: .8vw;
+//   .gallery-item-inner {
+//     padding: 10px;
+//     background-color: white;
+//     img {
+//       max-width: 100%;
+//       height: auto;
+//     }
+//   }
+// }
+
+// //magnific overlay
+// .mfp-wrap{
+//   .mfp-container {
+//     background: rgba(244,244,244, .95);
+//     button.mfp-arrow {
+//       background-color: rgba(244,244,244, .0);
+//       &:hover {
+//         background-color: rgba(244,244,244, .0);
+//       }
+//     }
+//   }
+//   button.mfp-close {
+//     top: 30px;
+//     right: 30px;
+//     width: 50px;
+//     height: 50px;
+//     background-color: transparent !important;
+//     color: #333 !important;
+//     font-size: 50px;
+//     &:hover {
+//       background-color: rgba(244,244,244, .0);
+//     }
+
+//   }
+// }
+
+// @media screen and (max-width: 1024px) {
+//   /* 3 columns for samller screens */
+//   .gallery-item { width: 33%; }
+// }
+
+// @media screen and (max-width: 650px) {
+//   .gallery-item { width: 50%; }
+// }
+
+// @media screen and (max-width: 362px) {
+//   .gallery-item { width: 100%; }
+// }

@@ -1,0 +1,124 @@
+.archive.woocommerce-shop,
+.archive.tax-product_cat, 
+.woocommerce  {
+  .woocommerce-products-header{
+
+  }
+
+  ul.products {
+    //product boxes different sizes - stretch for same:
+    align-items: flex-start;
+    clear: none;
+
+    li.entry.product {
+      background-color: white;
+      padding: 10px;
+      
+      a.woocommerce-LoopProduct-link {
+        .onsale {
+          right: 0;
+          top: 0;
+          border-radius: 0;
+          padding: 1px 10px;
+          font-weight: 400;
+        }
+        .woo-sold-notice {
+          position: absolute;
+          padding: 3px 10px;
+          left: 0;
+          top: 0;
+          color: white;
+          background-color: #cc0000;
+        }
+        .art-info  {
+          font-size: .7em;
+          padding-bottom: 8px;
+          .art-detail {
+            font-weight: 400 !important;
+          }
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+
+      a.button{
+        font-size: 15px;
+        padding: 5px 17px;
+      }
+    }
+
+  }
+
+  @media screen and (min-width: 1024px) {
+
+    ul.products {
+  
+      li.entry.product {
+        width: calc(25% - 16px)!important;
+      }
+  
+    }
+  
+    }
+  
+  @media screen and (max-width: 1023px) {
+
+  ul.products {
+
+    li.entry.product {
+      width: calc(33% - 16px)!important;
+    }
+
+  }
+
+  }
+
+  @media screen and (max-width: 650px) {
+    
+  ul.products {
+
+    li.entry.product {
+      width: calc(50% - 16px)!important;
+    }
+
+  }
+  }
+
+  @media screen and (max-width: 362px) {
+    
+  ul.products {
+
+    li.entry.product {
+      width: 100% !important;
+    }
+
+  }
+  }
+}
+
+
+// //woo-general styles 
+// .woocommerce {
+//   .content-area {
+//     padding: 0 3vw;
+    
+//       .site-header, .site-main, .widget-area, .site-footer {
+//         width: 100%;
+//         max-width: 1360px;
+//         margin: 0 auto;
+//         display: flex;
+//         flex-direction: column;
+    
+//         @media screen and (max-width: 1360px) {
+//           width: 94%;
+//         }
+//         @media screen and (max-width: 768px) {
+//           //width: 95%;
+//           //margin: 0 3vw;
+//         }
+    
+//       }
+//     }
+ 
+// }

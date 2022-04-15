@@ -1,0 +1,345 @@
+@charset "UTF-8";
+
+/*!
+Theme Name: Merritt Studios Custom
+Template: TwentyTwentyOne
+Theme URI: https://wordpress.org/themes/twentytwentyone/
+Author: the WordPress team with additons by Ann Newcomer
+Author URI: https://wordpress.org/
+Description: Merrit Studios Theme is a gallery, learning and eCommerce theme custom-designed for Bronwyn Merrit on top of the WordPress 2021 Theme.
+Requires at least: 5.3
+Tested up to: 5.8
+Requires PHP: 5.6
+Version: 1.4
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: twentytwentyone
+Tags: one-column, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, block-patterns, rtl-language-support, sticky-post, threaded-comments, translation-ready
+
+Twenty Twenty-One WordPress Theme, (C) 2020 WordPress.org
+Twenty Twenty-One is distributed under the terms of the GNU GPL.
+*/
+
+/**
+ * SETTINGS
+ * File-header..........The file header for the themes style.css file.
+ * Fonts................Any font files, if the project needs specific fonts.
+ * Global...............Project-specific, globally available variables.
+ *
+ * TOOLS
+ * Functions............Global functions.
+ * Mixins...............Global mixins.
+ *
+ * GENERIC
+ * Normalize.css........Normalise browser defaults.
+ * Breakpoints..........Mixins and variables for responsive styles
+ * Vertical-margins.....Vertical spacing for the main components.
+ * Reset................Reset specific elements to make them easier to style in other contexts.
+ * Clearings............Clearings for the main components.
+ *
+ * ELEMENTS
+ * Blockquote...........Default blockquote.
+ * Forms................Element-level form styling.
+ * Headings.............H1–H6
+ * Links................Default links.
+ * Lists................Default lists.
+ * Media................Images, Figure, Figcaption, Embed, iFrame, Objects, Video.
+ *
+ * BLOCKS
+ * Audio................Specific styles for the audio block.
+ * Button...............Specific styles for the button block.
+ * Code.................Specific styles for the code block.
+ * Columns..............Specific styles for the columns block.
+ * Cover................Specific styles for the cover block.
+ * File.................Specific styles for the file block.
+ * Gallery..............Specific styles for the gallery block.
+ * Group................Specific styles for the group block.
+ * Heading..............Specific styles for the heading block.
+ * Image................Specific styles for the image block.
+ * Latest comments......Specific styles for the latest comments block.
+ * Latest posts.........Specific styles for the latest posts block.
+ * Legacy...............Specific styles for the legacy gallery.
+ * List.................Specific styles for the list block.
+ * Media text...........Specific styles for the media and text block.
+ * Navigation...........Specific styles for the navigation block.
+ * Paragraph............Specific styles for the paragraph block.
+ * Pullquote............Specific styles for the pullquote block.
+ * Quote................Specific styles for the quote block.
+ * Search...............Specific styles for the search block.
+ * Separator............Specific styles for the separator block.
+ * Spacer...............Specific styles for the spacer block.
+ * Table................Specific styles for the table block.
+ * Verse................Specific styles for the verse block.
+ * Video................Specific styles for the video block.
+ * Utilities............Block alignments.
+ *
+ * COMPONENTS
+ * Header...............Header styles.
+ * Footer...............Footer styles.
+ * Comments.............Comment styles.
+ * Archives.............Archive styles.
+ * 404..................404 styles.
+ * Search...............Search styles.
+ * Navigation...........Navigation styles.
+ * Footer Navigation....Footer Navigation styles.
+ * Pagination...........Pagination styles.
+ * Single...............Single page and post styles.
+ * Posts and pages......Misc, sticky post styles.
+ * Entry................Entry, author biography.
+ * Widget...............Widget styles.
+ * Editor...............Editor styles.
+ *
+ * UTILITIES
+ * A11y.................Screen reader text, prefers reduced motion etc.
+ * Color Palette........Classes for the color palette colors.
+ * Editor Font Sizes....Editor Font Sizes.
+ * Measure..............The width of a line of text, in characters.
+ */
+
+/* Categories 01 to 03 are the basics. */
+
+/* Variables */
+:root {
+
+	/* Font Family */
+	--global--font-primary: var(--font-headings, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+	--global--font-secondary: var(--font-base, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif);
+
+	/* Font Size */
+	--global--font-size-base: 1.25rem;
+	--global--font-size-xs: 1rem;
+	--global--font-size-sm: 1.125rem;
+	--global--font-size-md: 1.25rem;
+	--global--font-size-lg: 1.5rem;
+	--global--font-size-xl: 2.25rem;
+	--global--font-size-xxl: 4rem;
+	--global--font-size-xxxl: 5rem;
+	--global--font-size-page-title: var(--global--font-size-xxl);
+	--global--letter-spacing: normal;
+
+	/* Line Height */
+	--global--line-height-body: 1.7;
+	--global--line-height-heading: 1.3;
+	--global--line-height-page-title: 1.1;
+
+	/* Headings */
+	--heading--font-family: var(--global--font-primary);
+	--heading--font-size-h6: var(--global--font-size-xs);
+	--heading--font-size-h5: var(--global--font-size-sm);
+	--heading--font-size-h4: var(--global--font-size-lg);
+	--heading--font-size-h3: calc(1.25 * var(--global--font-size-lg));
+	--heading--font-size-h2: var(--global--font-size-xl);
+	--heading--font-size-h1: var(--global--font-size-xl);
+	--heading--letter-spacing-h6: 0.05em;
+	--heading--letter-spacing-h5: 0.05em;
+	--heading--letter-spacing-h4: var(--global--letter-spacing);
+	--heading--letter-spacing-h3: var(--global--letter-spacing);
+	--heading--letter-spacing-h2: var(--global--letter-spacing);
+	--heading--letter-spacing-h1: var(--global--letter-spacing);
+	--heading--line-height-h6: var(--global--line-height-heading);
+	--heading--line-height-h5: var(--global--line-height-heading);
+	--heading--line-height-h4: var(--global--line-height-heading);
+	--heading--line-height-h3: var(--global--line-height-heading);
+	--heading--line-height-h2: var(--global--line-height-heading);
+	--heading--line-height-h1: var(--global--line-height-page-title);
+	--heading--font-weight: normal;
+	--heading--font-weight-page-title: 300;
+	--heading--font-weight-strong: 600;
+
+	/* Block: Latest posts */
+	--latest-posts--title-font-family: var(--heading--font-family);
+	--latest-posts--title-font-size: var(--heading--font-size-h3);
+	--latest-posts--description-font-family: var(--global--font-secondary);
+	--latest-posts--description-font-size: var(--global--font-size-sm);
+	--list--font-family: var(--global--font-secondary);
+	--definition-term--font-family: var(--global--font-primary);
+
+	/* Colors */
+	--global--color-black: #000;
+	--global--color-dark-gray: #28303d;
+	--global--color-gray: #39414d;
+	--global--color-light-gray: #f0f0f0;
+	--global--color-green: #d1e4dd;
+	--global--color-blue: #d1dfe4;
+	--global--color-purple: #d1d1e4;
+	--global--color-red: #e4d1d1;
+	--global--color-orange: #e4dad1;
+	--global--color-yellow: #eeeadd;
+	--global--color-white: #fff;
+	--global--color-white-50:#{ rgba(255, 255, 255, 0.5)};
+	--global--color-white-90:#{ rgba(255, 255, 255, 0.9)};
+	--global--color-primary: var(--global--color-dark-gray);
+
+	/* Body text color, site title, footer text color. */
+	--global--color-secondary: var(--global--color-gray);
+
+	/* Headings */
+	--global--color-primary-hover: var(--global--color-primary);
+	--global--color-background: var(--global--color-light-gray);
+
+	/* Mint, default body background */
+	--global--color-border: var(--global--color-primary);
+
+	/* Used for borders (separators) */
+
+	/* Spacing */
+	--global--spacing-unit: 20px;
+	--global--spacing-measure: unset;
+	--global--spacing-horizontal: 25px;
+	$global--spacing-horizontal: 25px;
+
+	--global--spacing-vertical: 30px;
+
+	/* Elevation */
+	--global--elevation: #{1px 1px 3px 0 rgba(0, 0, 0, 0.2)};
+
+	/* Forms */
+	--form--font-family: var(--global--font-secondary);
+	--form--font-size: var(--global--font-size-sm);
+	--form--line-height: var(--global--line-height-body);
+	--form--color-text: var(--global--color-dark-gray);
+	--form--color-ranged: var(--global--color-secondary);
+	--form--label-weight: 500;
+	--form--border-color: var(--global--color-secondary);
+	--form--border-width: 3px;
+	--form--border-radius: 0;
+	--form--spacing-unit: calc(0.5 * var(--global--spacing-unit));
+
+	/* Cover block */
+	--cover--height: calc(15 * var(--global--spacing-vertical));
+	--cover--color-foreground: var(--global--color-white);
+	--cover--color-background: var(--global--color-black);
+
+	/* Buttons */
+	--button--color-text: var(--global--color-background);
+	--button--color-text-hover: var(--global--color-secondary);
+	--button--color-text-active: var(--global--color-secondary);
+	--button--color-background: var(--global--color-secondary);
+	--button--color-background-active: var(--global--color-background);
+	--button--font-family: var(--global--font-primary);
+	--button--font-size: var(--global--font-size-base);
+	--button--font-weight: 500;
+	--button--line-height: 1.5;
+	--button--border-width: 3px;
+	--button--border-radius: 0;
+	--button--padding-vertical: 4px;
+	--button--padding-horizontal: calc(4 * var(--button--padding-vertical));
+
+	/* entry */
+	--entry-header--color: var(--global--color-primary);
+	--entry-header--color-link: currentColor;
+	--entry-header--color-hover: var(--global--color-primary-hover);
+	--entry-header--color-focus: var(--global--color-secondary);
+	--entry-header--font-size: var(--heading--font-size-h2);
+	--entry-content--font-family: var(--global--font-secondary);
+	--entry-author-bio--font-family: var(--heading--font-family);
+	--entry-author-bio--font-size: var(--heading--font-size-h4);
+
+	/* Header */
+	--branding--color-text: var(--global--color-primary);
+	--branding--color-link: var(--global--color-primary);
+	--branding--color-link-hover: var(--global--color-secondary);
+	--branding--title--font-family: var(--global--font-primary);
+	--branding--title--font-size: var(--global--font-size-lg);
+	--branding--title--font-size-mobile: var(--heading--font-size-h4);
+	--branding--title--font-weight: normal;
+	--branding--title--text-transform: uppercase;
+	--branding--description--font-family: var(--global--font-secondary);
+	--branding--description--font-size: var(--global--font-size-sm);
+	--branding--description--font-family: var(--global--font-secondary);
+	--branding--logo--max-width: 300px;
+	--branding--logo--max-height: 40px;
+	--branding--logo--max-width-mobile: 96px;
+	--branding--logo--max-height-mobile: 96px;
+
+	/* Main navigation */
+	--primary-nav--font-family: var(--global--font-secondary);
+	--primary-nav--font-family-mobile: var(--global--font-primary);
+	--primary-nav--font-size: var(--global--font-size-md);
+	--primary-nav--font-size-sub-menu: var(--global--font-size-xs);
+	--primary-nav--font-size-mobile: var(--global--font-size-sm);
+	--primary-nav--font-size-sub-menu-mobile: var(--global--font-size-sm);
+	--primary-nav--font-size-button: var(--global--font-size-xs);
+	--primary-nav--font-style: normal;
+	--primary-nav--font-style-sub-menu-mobile: normal;
+	--primary-nav--font-weight: normal;
+	--primary-nav--font-weight-button: 500;
+	--primary-nav--color-link: var(--global--color-primary);
+	--primary-nav--color-link-hover: var(--global--color-primary-hover);
+	--primary-nav--color-text: var(--global--color-primary);
+	--primary-nav--padding: calc(0.66 * var(--global--spacing-unit));
+	--primary-nav--border-color: var(--global--color-primary);
+
+	/* Pagination */
+	--pagination--color-text: var(--global--color-primary);
+	--pagination--color-link-hover: var(--global--color-primary-hover);
+	--pagination--font-family: var(--global--font-secondary);
+	--pagination--font-size: var(--global--font-size-lg);
+	--pagination--font-weight: normal;
+	--pagination--font-weight-strong: 600;
+
+	/* Footer */
+	--footer--color-text: var(--global--color-primary);
+	--footer--color-link: var(--global--color-primary);
+	--footer--color-link-hover: var(--global--color-primary-hover);
+	--footer--font-family: var(--global--font-primary);
+	--footer--font-size: var(--global--font-size-sm);
+
+	/* Block: Pull quote */
+	--pullquote--font-family: var(--global--font-primary);
+	--pullquote--font-size: var(--heading--font-size-h3);
+	--pullquote--font-style: normal;
+	--pullquote--letter-spacing: var(--heading--letter-spacing-h4);
+	--pullquote--line-height: var(--global--line-height-heading);
+	--pullquote--border-width: 3px;
+	--pullquote--border-color: var(--global--color-primary);
+	--pullquote--color-foreground: var(--global--color-primary);
+	--pullquote--color-background: var(--global--color-background);
+	--quote--font-family: var(--global--font-secondary);
+	--quote--font-size: var(--global--font-size-md);
+	--quote--font-size-large: var(--global--font-size-xl);
+	--quote--font-style: normal;
+	--quote--font-weight: 700;
+	--quote--font-weight-strong: bolder;
+	--quote--font-style-large: normal;
+	--quote--font-style-cite: normal;
+	--quote--line-height: var(--global--line-height-body);
+	--quote--line-height-large: 1.35;
+	--separator--border-color: var(--global--color-border);
+	--separator--height: 1px;
+
+	/* Block: Table */
+	--table--stripes-border-color: var(--global--color-light-gray);
+	--table--stripes-background-color: var(--global--color-light-gray);
+	--table--has-background-text-color: var(--global--color-dark-gray);
+
+	/* Widgets */
+	--widget--line-height-list: 1.9;
+	--widget--line-height-title: 1.4;
+	--widget--font-weight-title: 700;
+	--widget--spacing-menu: calc(0.66 * var(--global--spacing-unit));
+
+	/* Admin-bar height */
+	--global--admin-bar--height: 0px;
+}
+
+.admin-bar {
+	--global--admin-bar--height: 32px;
+}
+@media only screen and (max-width: 782px) {
+
+	.admin-bar {
+		--global--admin-bar--height: 46px;
+	}
+}
+
+@media only screen and (min-width: 652px) {
+
+	:root {
+		--global--font-size-xl: 2.5rem;
+		--global--font-size-xxl: 6rem;
+		--global--font-size-xxxl: 9rem;
+		--heading--font-size-h3: 2rem;
+		--heading--font-size-h2: 3rem;
+	}
+}

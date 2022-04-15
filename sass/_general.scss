@@ -1,0 +1,72 @@
+
+	$link-color: #9d0303;
+	
+	//admin-bg 
+	.editor-styles-wrapper {
+		background-color: var(--global--color-light-gray) !important;
+	}
+
+	//general 
+	h1.page-title, h2.page-title {
+		font-weight: 500;
+	}
+
+	.flex-center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.flex-col-center {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+  .hide-div {
+    display: none;
+  }
+
+	%ease {
+		-webkit-transition: all 500ms ease;
+		-moz-transition: all 500ms ease;
+		-o-transition: all 500ms ease;
+		transition: all 500ms ease; 
+	}
+
+	// header
+	.site-branding {
+		.site-logo {
+			margin: 5px 0;
+		}
+	}
+	#masthead.site-header {
+		padding-top: calc(2.4 * var(--global--spacing-vertical));
+		padding: 0 50px;
+		max-width: unset;
+		background-color: white;
+		position: fixed;
+		z-index: 50;
+		//top: 0;
+	}
+
+	.site-main {
+		//to compensate for sliding up bhind fixed menu
+		padding-top: 90px;
+	}
+	
+	.site-header, .site-main, .widget-area, .site-footer {
+
+			@media only screen and (max-width: 960px){
+				padding-left: 7vw;
+				padding-right: 7vw;
+			}
+		}
+
+		#frieze {
+			min-height: 85px;
+			border-radius: 16px;
+			border: 5px solid black;
+		}
+
