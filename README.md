@@ -1,6 +1,6 @@
 # Bronwyn Merritt Studio & Gallery Custom Child Theme
 
-Besed on the WordPress Twenty Twenty-One Theme with a Gallery custom post type, customized woo-commerce and two js libraries for a custom light box for the gallery pages and responsive masonry display of both gallery items and the products.
+Based on the WordPress Twenty Twenty-One Theme with a Gallery custom post type, I, A.F.Newcomer, customized Woocommerce and two js libraries to make a light box for the gallery pages and responsive masonry display of both gallery items and the products.
 
 ## The business Problem:
 The business owner is a print and mixed media artist with an extremely loyal group of followers. She needed an e-commerce site to sell new work, as well as a gallery to showcase her archive for potential gallery owners, but it had to be clearly separate from the work for sale, or she would get irate calls and messages from disppointed fans who can't buy a certain work they see. In addition, she has an archive of old blogs she'd like to keep, and she plans to begin making, and potentially selling, video courses.
