@@ -11,6 +11,11 @@ I customized Woocommerce, using hooks and advanced custom fields, to show clearl
 
 I added a blog with video capabilities, which can later take advantage of wordpress's video post format to create a video category when she's ready to get serious about her YouTube channel.
 
-Finally, agian using advanced custom fields, I made it possible for her to easily hide or show any sections on the front page, depending on whether she has work or blog posts ready for the public, since she will need to get up and running quickly for the show, before her blog or eCommerce may be ready.
+Finally, again using advanced custom fields, I made it possible for her to easily hide or show any sections on the front page, depending on whether she has work or blog posts ready for the public, since she will need to get up and running quickly for the show, before her blog or eCommerce may be ready.
+<img
+  src="/FP-screenshot-test-site.jpg"
+  alt="screenshot of Merrit Studios Staging Site top hero section"
+  title=""
+  style="display: inline-block; margin: 0 auto; max-width: 60vh;">
 
 

@@ -43,6 +43,7 @@
         </section>
     <?php  } ?>
 
+              <!-- if later the site owner wants to add a different dividing graphic, she can do so from the admin area - currently it uses one of her woodblock prints as a repeating image -->
     <?php if(get_field('frieze')) {
             $frieze = get_field('frieze'); ?>
       <section id="frieze" style="background: url(<?php echo $frieze; ?>) repeat center;">
@@ -66,6 +67,7 @@
       </section>
     <?php  } ?>
 
+    <!-- Make the products section able to be hidden from the wp admin area -->
     <?php if(get_field('hide_products')== '0') : ?>
       <section id="front_page_products" class="woocommerce">
         <?php else : ?>
@@ -125,6 +127,7 @@
 
     </section>
 
+    <!-- Make the product category section able to be hidden from the wp admin area -->
     <?php if(get_field('hide_categories') == '0') : ?>
       <section id="front_page_products_cats" class="">
     <?php else : ?>
@@ -136,6 +139,8 @@
       <?php echo do_shortcode('[product_categories number="4" orderby="date"  order="desc"]'); ?>
     </section>
 
+
+    <!-- Make the posts section able to be hidden from the wp admin area -->
     <?php if(get_field('hide_posts') == '0') : ?>
       <section id="fp-blog" class="">
     <?php else : ?>
