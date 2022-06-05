@@ -3602,6 +3602,7 @@ table.wp-calendar-table caption {
 
 	.site-header.has-logo.has-title-and-tagline.has-menu .site-branding {
 		max-width: calc(100% - 160px);
+		margin-right: auto;
 	}
 
 	.site-header.has-logo.has-title-and-tagline .site-branding {
@@ -3615,6 +3616,7 @@ table.wp-calendar-table caption {
 	body:not(.primary-navigation-open) .site-header.has-logo.has-title-and-tagline .primary-navigation {
 		position: relative;
 		top: 0;
+		align-self: center;
 	}
 
 	body:not(.primary-navigation-open) .site-header.has-logo.has-title-and-tagline .menu-button-container {
@@ -3630,7 +3632,6 @@ table.wp-calendar-table caption {
 	}
 
 	.site-header:not(.has-logo).has-title-and-tagline .site-branding {
-		margin-right: 0;
 		max-width: calc(100% - 160px);
 	}
 
